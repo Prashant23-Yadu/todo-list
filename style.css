@@ -1,0 +1,130 @@
+/* General Styling */
+body {
+    font-family: "Inter", sans-serif;
+    background: #f8f9fa;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  /* Dark Mode */
+  body.dark {
+    background: #222;
+    color: #fff;
+  }
+  
+  /* Container */
+  .container {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+  }
+  
+  /* Header */
+  h1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+  }
+  
+  /* Dark Mode Button */
+  #toggle-dark {
+    cursor: pointer;
+    border: none;
+    background: #eee;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  
+  #toggle-dark:hover {
+    background: #ddd;
+  }
+  
+  /* Input Fields */
+  input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  input:focus, select:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  /* Buttons */
+  button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #add-btn {
+    background: #007bff;
+    color: white;
+  }
+  
+  #add-btn:hover {
+    background: #0056b3;
+  }
+  
+  #clear-all {
+    background: #dc3545;
+    color: white;
+    margin-top: 10px;
+  }
+  
+  #clear-all:hover {
+    background: #c82333;
+  }
+  
+  /* Task List */
+  .task {
+    display: flex;
+    justify-content: space-between;
+    background: #f1f1f1;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 6px;
+    transition: 0.3s;
+  }
+  
+  .task.completed {
+    text-decoration: line-through;
+    background: #d4edda;
+  }
+  
+  /* Toast Notification */
+  .toast {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    animation: fadeOut 3s forwards;
+  }
+  
+  @keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  

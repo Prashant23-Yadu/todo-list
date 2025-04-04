@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🌟 To-Do List Pro</title>
+  
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📝 My To-Do List</h1>
+
+    <button id="toggle-dark">🌗 Toggle Dark Mode</button>
+
+    <!-- Task Counter & Progress -->
+    <div id="task-stats">
+      <span id="task-counter">0 of 0 completed</span>
+      <div class="progress-bar"><div id="progress"></div></div>
+    </div>
+
+    <!-- Search -->
+    <input type="text" id="search-input" placeholder="🔍 Search tasks..." />
+
+    <!-- Input Group -->
+    <div class="input-group">
+      <input type="text" id="task-input" placeholder="Enter a new task" />
+      <input type="date" id="due-date" />
+      <select id="priority">
+        <option value="Low">🟢 Low</option>
+        <option value="Medium">🟡 Medium</option>
+        <option value="High">🔴 High</option>
+      </select>
+      <button id="add-btn"><i class="fas fa-plus"></i> Add Task</button>
+    </div>
+
+    <!-- To-Do Tasks -->
+    <ul id="task-list"></ul>
+
+    <!-- Completed Tasks -->
+    <h3>✅ Completed Tasks</h3>
+    <ul id="completed-list"></ul>
+
+    <!-- Clear All -->
+    <button id="clear-all">🧹 Clear All Tasks</button>
+  </div>
+
+  <!-- Toast Container -->
+  <div id="toast-container"></div>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
